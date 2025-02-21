@@ -1,0 +1,206 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only inside media queries
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit; 
+  color: #000
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; 
+}
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 59%; 
+    } 
+}
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 56%; 
+    } 
+}
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 65%; 
+    } 
+}
+
+body {
+  font-family: "Source Sans 3", serif;
+  box-sizing: border-box;
+  position: relative;
+  line-height: 1.5;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: 'Source Sans Pro', sans-serif; 
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+li {
+  list-style: none; 
+}
+
+input:focus,
+button:focus,
+a:focus,
+textarea:focus {
+  outline: none; 
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: #7843E9;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 1em 4em;
+}
+
+textarea {
+  resize: none; 
+}
+
+/** BANNER */
+
+#banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 2em;
+}
+
+#nav-bar {
+    width: 50%;
+}
+
+/* #nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} */
+
+#nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+
+#nav-bar ul {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 6rem;
+  right: 0;
+  width: 100%;
+  background-color: #000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#nav-bar li {
+  padding: 1em 0;
+  text-align: center;
+  border-bottom: .5px solid rgb(175, 173, 173);
+}
+
+#nav-bar a {
+  color: #F7DCBC;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#nav-bar ul.active {
+  display: flex;
+  background-color: #ffffff;
+  border: 0.5px solid rgb(175, 173, 173);
+  width: 20rem;
+  z-index: 1;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #3E1E04;
+  margin: 3px 0;
+}
+
+#header-logo-img-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-logo-img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 0.1em;
+    margin-right: 1.5rem;
+    background: #0062b9; 
+}
+
+
+/** HERO SECTION */
+#hero-section {
+    color: #fff;
+    background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(/public/images/common-bg.svg);
+    background-position: center;
+    height: 100vh;
+    min-height: 80rem;
+    max-height: 120rem;
+    position: relative;
+}
+
+@media only screen and (max-width: 37.5em) {
+    #hero-section {
+      font-size: 1.7rem;
+      height: unset;
+      min-height: unset; 
+    } 
+}
+
+#hero-section-info {
+    margin: 0 1em;
+    padding: 4em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero-section-info p {
+    text-align: center;
+    margin: 1em 3em;
+}
+
+
