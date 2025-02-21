@@ -57,6 +57,10 @@ h1 {
   font-weight: bold;
   font-size: 2em;
 }
+h2 {
+  font-weight: bold;
+  font-size: 1.7em;
+}
 
 a {
   text-decoration: none;
@@ -190,7 +194,7 @@ textarea {
     } 
 }
 
-#hero-section-info {
+.section-title {
     margin: 0 1em;
     padding: 4em 0;
     display: flex;
@@ -198,9 +202,52 @@ textarea {
     align-items: center;
 }
 
-#hero-section-info p {
+.section-title p {
     text-align: center;
     margin: 1em 3em;
 }
+
+/** MAIN SECTION */
+/** ABOUT SECTION */
+/** TITLE PART */
+
+#about {
+  font-size: 1.6rem;
+}
+
+/** TEXT PART */
+
+.about-text-section {
+  margin: 0 1em;
+}
+
+.about-text-section h3, .about-text-section p, .about-text-section button {
+  margin: 1em 0;
+}
+
+/** HARD SKILLS PART */
+
+.hard-skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 0.5em;
+}
+
+.skill {
+  margin: 0.6em 0.6em;
+  padding: 0.7em 1em;
+  background-color: rgb(235, 227, 227);
+  border-radius: 3px;
+}
+
+.hard-skills-title {
+  margin: 1em;
+}
+
+
+
+
 
 
