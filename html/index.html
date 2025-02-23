@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio">
+    <meta name="keywords" content="hard-skills, soft-skills, développement web, passion, portfolio, projets">
+    <meta name="author" content="Hanquez benjamin">
     <link rel="stylesheet" href="../public/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,10 +30,10 @@
                     <div class="bar"></div>
                   </div>
                 <ul>
-                    <li>HOME</li>
-                    <li>ABOUT</li>
-                    <li>PROJECTS</li>
-                    <li>CONTACT</li>
+                    <li><a href="#hero-section">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#project-section">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
         </section>
@@ -53,32 +56,106 @@
                 <p>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
             </div>
         <!-- ABOUT SECTION TEXT PART -->
-            <section class="about-text-section">
-                <h3 class="about-title">Get to know me !</h3>
-                <p class="about-para">As a passionate young developer, I create dynamic and accessible websites, designed to offer an optimal user experience. Check out some of my work in the Projects section.</p>
-                <p class="about-para">I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
-                <button class="button">CONTACT</button>
-            </section>
+            <section id="about-content">
+                <section class="container-text-section">
+                    <h3 class="box-title">Get to know me !</h3>
+                    <p class="box-para">As a passionate young developer, I create dynamic and accessible websites, designed to offer an optimal user experience. Check out some of my work in the Projects section.</p>
+                    <p class="about-para">I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
+                    <button class="button">CONTACT</button>
+                </section>
 
-        <!-- ADBOUT SECTION HARD SKILLS PART -->
-            <section class="hard-skills-container">
-                <h3 class="hard-skills-title">My skills</h3>
-                <div class="hard-skills">
-                    <div class="skill">HTML</div>
-                    <div class="skill">JavaScript</div>
-                    <div class="skill">CSS</div>
-                    <div class="skill">REACT</div>
-                    <div class="skill">Node js</div>
-                    <div class="skill">Wordpress</div>
-                    <div class="skill">GIT</div>
-                    <div class="skill">Github</div>
-                    <div class="skill">Postgres</div>
-                    <div class="skill">SQL</div>
-                    <div class="skill">NoSQL</div>
-                    <div class="skill">Responsive Design</div>
-                </div>
+            <!-- ADBOUT SECTION HARD SKILLS PART -->
+                <section class="hard-skills-container">
+                    <h3 class="hard-skills-title">My skills</h3>
+                    <div class="hard-skills">
+                        <div class="skill">HTML</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">REACT</div>
+                        <div class="skill">Node js</div>
+                        <div class="skill">Wordpress</div>
+                        <div class="skill">GIT</div>
+                        <div class="skill">Github</div>
+                        <div class="skill">Postgres</div>
+                        <div class="skill">SQL</div>
+                        <div class="skill">NoSQL</div>
+                        <div class="skill">Responsive Design</div>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section id="project-section">
+            <div class="section-title">
+                <h2>PROJECTS</h2>
+                <p>Here you will find some of the personal and clients projects that I created with each project containing its own case study</p>
+            </div>
+                <article class="project-article">
+                    <img src="/public/images/desktop-ocoffee-prject.jpg" alt="image d'un ordinateur avec le site ocoffee visible à l'écran">
+                    <div class="container-text-section project">
+                        <h3 class="box-title">O'cofee</h3>
+                        <p class="box-para">O'Coffee is a website developed as part of a training project, designed to put into practice the principles of Model-View-Controller (MVC) architecture and Separation of Concern (SOC).
+                        </p>
+                        <button>LEARN MORE</button>
+                    </div>
+                </article>
+                <article class="project-article">
+                    <img src="/public/images/desktop-colmar-project.jpg" alt="image d'un ordinateur avec le site ocoffee visible à l'écran">
+                    <div class="container-text-section project">
+                        <h3 class="box-title">O'cofee</h3>
+                        <p class="box-para">O'Coffee is a website developed as part of a training project, designed to put into practice the principles of Model-View-Controller (MVC) architecture and Separation of Concern (SOC).</p>
+                        <button>LEARN MORE</button>
+                    </div>
+                </article>
+                <article class="project-article">
+                    <img src="/public/images/mac-device-ocoffee.jpg" alt="image d'un ordinateur avec le site ocoffee visible à l'écran">
+                    <div class="container-text-section project">
+                        <h3 class="box-title">O'cofee</h3>
+                        <p class="box-para">O'Coffee is a website developed as part of a training project, designed to put into practice the principles of Model-View-Controller (MVC) architecture and Separation of Concern (SOC). <!--Although not a real customer project, O'Coffee was developed with particular attention to code structure and organization, to ensure a robust and maintainable application.--></p>
+                        <button>LEARN MORE</button>
+                    </div>
+                </article>
+        </section>
+        <section id="contact">
+            <div class="section-title">
+                <h2>CONTACT</h2>
+                <p>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
+            </div>
+            <section id="form-section">
+                <form id="form" action="">
+                    <div class="field">
+                        <label class="label" for="name">Name</label>
+                        <div class="control">
+                            <input class="input" type="text" name="name" id="name" placeholder="Name" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="email">Email</label>
+                        <div class="control">
+                            <input class="input" type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="message">Votre message</label>
+                        <div class="control">
+                            <textarea id="message" class="input" name="message" placeholder="Votre méssage..." rows="5" cols="33" required></textarea>
+                        </div>
+                    </div>
+                    <button class="submit" type="submit">SUBMIT</button>
+                </form>
             </section>
         </section>
     </main>
+    <footer id="footer" class="container-text-section footer">
+        <div class="right-side">
+            <h3 class="title">SOCIAL</h3>
+            <img class="social" src="/public/images/linkedin.png" alt="Logo LinkedIn">
+            <img class="social" src="/public/images/github.png" alt="Logo Github">
+        </div>
+        <div class="left-side">
+            <h3 class="box-title title">HANQUEZ BENJAMIN</h3>
+            <p class="box-para para"> As a passionate young developer, I create dynamic and accessible websites, designed to offer an optimal user experience.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
