@@ -226,7 +226,7 @@ textarea {
 /** HERO SECTION */
 #hero-section, #contact {
     color: #fff;
-    background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(/public/images/common-bg.svg);
+    background: linear-gradient(to right, rgba(245, 245, 245, 0.75), rgba(245, 245, 245, 0.75)), url(/public/images/common-bg.svg);
     background-position: center;
     height: 100vh;
     min-height: 80rem;
@@ -388,11 +388,18 @@ img.social {
 
 @media screen and (min-width: 720px) {
   #hero-section, #contact{
-    padding-top: 6em;
     font-size: 1.5em;
     height: auto;
     min-height: 55rem;
     max-height: 120rem;
+  }
+
+  #contact, #project-section, #about{
+    padding: 8em;
+  }
+
+  #hero-section {
+    padding-top: 6rem 0;
   }
 
   .project {
@@ -443,7 +450,7 @@ img.social {
   }
 
   .section-title {
-    padding: 20rem;
+    padding: 35rem 10rem 20rem 10rem;
   }
 
   .section-title p {
@@ -487,3 +494,5 @@ img.social {
     height: 25rem;
   }
 }
+
+/* TODO: H1 + menu burger on desktop */
