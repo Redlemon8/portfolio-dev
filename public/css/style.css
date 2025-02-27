@@ -56,15 +56,21 @@ body {
 h1 {
   font-weight: bold;
   font-size: 2em;
+  text-align: center;
 }
 h2 {
   font-weight: bold;
   font-size: 1.7em;
 }
 
-p {
+p, .list-description li {
   font-size: 1.4em;
   color: rgb(102, 102, 102);
+}
+
+.list-description li {
+  margin: 2rem 0 2rem 0;
+  list-style-type: disc;
 }
 
 a {
@@ -95,6 +101,18 @@ button {
 
 textarea {
   resize: none;
+}
+
+.project-details__links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.project-details__links button {
+  margin: 1rem 0;
 }
 
 /** BANNER */
@@ -263,6 +281,10 @@ textarea {
   background-color: rgb(245, 245, 245);
 }
 
+.box-title{
+  font-size: 2.5rem;
+}
+
 /** TEXT PART */
 
 .container-text-section {
@@ -378,6 +400,31 @@ img.social {
   width: 10%;
 }
 
+/** PROJECT PAGES */
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
+}
+
+.project-details {
+  width: 80%;
+  margin: auto;
+  font-size: 1.4rem;
+}
+
+.project-info {
+  margin: 4rem 0;
+}
+
+.margin {
+  margin: 2rem 0;
+}
+
+
+
 @media only screen and (max-width: 600px) {
   #hero-section, #contact {
     font-size: 1.7rem;
@@ -422,6 +469,18 @@ img.social {
   .right-side {
     margin: 0;
     margin-left: 1em;
+  }
+
+  .project-details__links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .project-details__links button {
+    margin: 1rem 0;
   }
 }
 
@@ -492,6 +551,11 @@ img.social {
 
   #message {
     height: 25rem;
+  }
+
+  .project-details {
+    width: 58%;
+    margin: auto;
   }
 }
 
