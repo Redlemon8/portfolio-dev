@@ -57,15 +57,21 @@ h1 {
   font-weight: bold;
   font-size: 2em;
   text-align: center;
+  color: #2D1958;
 }
 h2 {
   font-weight: bold;
   font-size: 1.7em;
+  color: #2D1958;
+}
+
+h3 {
+  color: #2D1958;
 }
 
 p, .list-description li {
   font-size: 1.4em;
-  color: rgb(102, 102, 102);
+  color: #502D9C;
 }
 
 .list-description li {
@@ -73,12 +79,25 @@ p, .list-description li {
   list-style-type: disc;
 }
 
+.sublist {
+  font-size: 0.7em;
+  padding-left: 6rem;
+  margin: 3rem 0;
+}
+
+span {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #7843E9;
+  font-style: italic;
+}
+
 a {
   text-decoration: none;
 }
 
 li {
-  list-style: none; 
+  list-style: none;
 }
 
 input:focus,
@@ -197,7 +216,7 @@ textarea {
 }
 
 #nav-bar a {
-  color: #000;
+  color: #2D1958;
   display: block;
   padding: 10px;
   text-decoration: none;
@@ -259,7 +278,7 @@ textarea {
 /** HERO SECTION */
 #hero-section, #contact {
     color: #fff;
-    background: linear-gradient(to right, rgba(235, 235, 235, 0.75), rgba(235, 235, 235, 0.75)), url(../images/common-bg.svg);
+    background: linear-gradient(to right, rgba(243, 241, 254, 0.75), rgba(243, 241, 254, 0.75)), url(../images/common-bg.svg);
     background-position: center;
     height: 100vh;
     min-height: 80rem;
@@ -293,7 +312,7 @@ textarea {
 }
 
 #about {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(243, 241, 254);
 }
 
 .box-title{
@@ -337,7 +356,7 @@ textarea {
 /** PROJECT SECTION */
 
 #project-section {
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(243, 241, 254, 0.90);
 }
 
 .project-article img {
